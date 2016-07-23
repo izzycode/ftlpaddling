@@ -55,6 +55,7 @@
         </div>
       </div>
     </div>
+    <%= image_tag("johnny-automatic-canoe-traveling-300px.png", height: 100) %>
 
     <div class="container">
       <div class="row">
@@ -75,15 +76,22 @@
           </div><!--/.well -->
         </div><!--/span-->
       </div><!--/row-->
-
-      <footer>
-        <p>&copy; CodeForFtL 2016</p>
-      </footer>
-
     </div> <!-- /container -->
+
+    <iframe
+      width="100%"
+      height="250"
+      frameborder="0"
+      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAwWb8udA2tRsEVZJjSblwsw1nk-H8mAmg&q=tarpon+river+fort+lauderdale+restaurants"
+      style="border:2px solid black;">
+    </iframe>
+
     <% if Rails.env.development? %>
       <%= console %>
       <%= debug(params) %>
     <%end%>
+    <footer>
+      <p>&copy; CodeForFtL 2016</p>
+    </footer>
   </body>
 </html>
