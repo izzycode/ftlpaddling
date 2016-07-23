@@ -19,3 +19,9 @@
 //= require_tree .
 
 $('#datetimepicker').data("DateTimePicker").FUNCTION()
+$(function(){
+$.ajax({
+      url: "/form_submit",
+      dataType: "html"
+  });
+})
