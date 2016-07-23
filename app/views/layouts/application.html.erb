@@ -64,12 +64,13 @@
         </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
-            <h3>Sidebar</h3>
+            <h3>Pionts of Interest</h3>
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "Paddle Rentals", "https://www.google.com/search?q=paddle+board+rentals+ft+lauderdale&oq=paddle+rentals+ft+la&aqs=chrome.1.69i57j0l5.7542j0j1&sourceid=chrome&ie=UTF-8", target:"blank" %></li>
+              <li><%= link_to "Historical Landmarks", "/path2"  %></li>
+              <li><%= link_to "Food", "https://www.google.com/search?q=paddle+board+rentals+ft+lauderdale&oq=paddle+rentals+ft+la&aqs=chrome.1.69i57j0l5.7542j0j1&sourceid=chrome&ie=UTF-8#q=food+near+new+river+fort+lauderdale&rflfq=1&rlha=0&rllag=26115549,-80141741,524&tbm=lcl&tbs=lf_msr:-1,lf_tr:-1,lf_pl:0,lf_od:-1,lf_oh:-1,lf_zg:-1,lf:1,lf_ui:9", target:"blank"  %></li>
+              <li><%= link_to "Pokestops", "/path3"  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -80,6 +81,9 @@
       </footer>
 
     </div> <!-- /container -->
-
+    <% if Rails.env.development? %>
+      <%= console %>
+      <%= debug(params) %>
+    <%end%>
   </body>
 </html>
