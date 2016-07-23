@@ -12,9 +12,9 @@ class WelcomeController < ApplicationController
 
     @distance = start_location.calculate_distance_to(end_location)
     @tide_info = WelcomeHelper::TidesAPI.new(@start_location, year: params[:start_time][6,4], month: params[:start_time][0,2], day: params[:start_time][3,2]).tides.join("\\n")
-    @destination = "The Atlantic Ocean"
-    @calculated_time = "12pm"
-
+    @destination = params[:end_location] 
+    @calculated_time = (@distance / 1.75).to_s % "%.1d"
+    @distance = @distance.to_s + " mi"
     respond_to do |format|
       format.html { redirect_to root_path }
       format.js { }
