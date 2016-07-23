@@ -57,6 +57,17 @@ body {
   color: rgb(0,81,124);
 }
 
+.btn-primary {
+  background-color: rgb(139,195,74);
+  color: rgb(245,245,245);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(85,139,47);
+}
+
+
 /*End Body Styling*/
 
 /*Sidebar Styling*/
@@ -70,3 +81,39 @@ a:hover {
 }
 
 /*End Sidebar Styling*/
+
+/*Footer Styling*/
+
+footer {
+  height: 25%;
+  padding-top: 2%;
+  margin-top: 3%;
+  background-color: rgba(0,81,124,0.9);
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+}
+
+footer p {
+  color: rgb(245,245,245);
+  font-family: 'Roboto Slab', serif;
+}
+
+footer a {
+  color: rgb(139,195,74);
+}
+
+footer a:hover {
+  color: rgb(245,245,245);
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+/*End Footer Styling*/
