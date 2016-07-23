@@ -8,8 +8,6 @@ module WelcomeHelper
       (options[:day]) ? url += "&d=#{options[:day]}" : nil
       response = HTTParty.get(url)
       parsed_html = Nokogiri::HTML.parse(response.body)
-      byebug
-      # @predictions = parsed_html.css(".predictions-table").split("\n")
       @predictions = parsed_html.css(".predictions-table").first.children.first.to_s.split("\n")
     end
   end
