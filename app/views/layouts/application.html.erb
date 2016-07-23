@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "FTLHackathon2016" %></title>
+
+    <script src="https://use.fontawesome.com/ea36aa4231.js"></script>
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -55,7 +58,7 @@
         </div>
       </div>
     </div>
-    <%= image_tag("johnny-automatic-canoe-traveling-300px.png", height: 100) %>
+    <%= image_tag("johnny-automatic-canoe-traveling-300px.png", height: 100, style:"float:right; margin: 0 5%;") %>
 
     <div class="container">
       <div class="row">
@@ -65,7 +68,7 @@
         </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
-            <h3>Pionts of Interest</h3>
+            <h3>Points of Interest</h3>
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
               <li><%= link_to "Paddle Rentals", "https://www.google.com/search?q=paddle+board+rentals+ft+lauderdale&oq=paddle+rentals+ft+la&aqs=chrome.1.69i57j0l5.7542j0j1&sourceid=chrome&ie=UTF-8", target:"blank" %></li>
