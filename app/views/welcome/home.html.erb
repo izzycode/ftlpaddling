@@ -14,16 +14,16 @@
         });
     </script><br />
     <label>Start Location</label><br />
-    <%= select_tag "locations", options_for_select(@locations), class:"form-control start-location" %><br />
+    <%= select_tag "start_location", options_for_select(@locations), class:"form-control" %><br />
 
 
     <label>End Location</label>
-    <%= select_tag "locations", options_for_select(@locations ), class:"form-control end-location", disabled:true %><br />
+    <%= select_tag "end_location", options_for_select(@locations ), class:"form-control end-location"%><br />
 
     <!-- <input name="end_location" type="text" class="form-control"  placeholder="Bermuda..."><br /> -->
 
     <label>Paddler Strength</label><br />
-    <%= select_tag "paddling_strength", options_for_select([ "Beginer", "Intermediate","Pro","Merman" ]), class:"form-control" %><br /><br />
+    <%= select_tag "paddling_strength", options_for_select([ "Beginner", "Intermediate","Pro","Merman" ]), class:"form-control" %><br /><br />
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>

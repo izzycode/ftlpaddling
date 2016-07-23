@@ -4,6 +4,10 @@ class WelcomeController < ApplicationController
   end
 
   def form_submit
+    start_location = Location.find_by(name: params[:start_location])
+    end_location = Location.find_by(name: params[:end_location])
+    @distance = start_location.calculate_distance_to(end_location)
+    @tide_info = WelcomeHelper::TidesAPI.new(@start_location, year: params[:start_time][6,4], month: params[:start_time][0,2], day: params[:start_time][3,2]).tides.join("<br>")
     @destination = "The Atlantic Ocean"
     @calculated_time = "12pm"
 
