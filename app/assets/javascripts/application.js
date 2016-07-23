@@ -18,13 +18,13 @@
 //= require turbolinks
 //= require_tree .
 
-$('#datetimepicker').data("DateTimePicker").FUNCTION()
 $(function(){
   $.ajax({
     url: "/form_submit",
     dataType: "html"
   });
 
-  $(".end-location").change();
-
+  $(".start-location").change(function(){
+    $(".end-location").removeAttr("disabled");
+  });
 })
