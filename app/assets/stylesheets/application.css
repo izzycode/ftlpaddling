@@ -16,3 +16,40 @@
  *= require_self
 
  */
+
+/*rgb(0,81,124) dark blue
+rgb(139,195,74) light green
+rgb(245,245,245) white smoke*/
+
+/*Navbar Styling*/
+
+.navbar {
+  background-color: rgba(0,81,124,0.9)
+}
+
+.navbar-default .navbar-brand {
+  color: rgb(245,245,245);
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar-default .navbar-nav li a {
+  color: rgb(245,245,245);
+  font-family: 'Poiret One', cursive;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: rgb(139,195,74);
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: rgb(139,195,74);
+}
+
+/*End Navbar Styling*/
+
+/*Body Styling*/
+
+body h2 {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(0,81,124);
+}
