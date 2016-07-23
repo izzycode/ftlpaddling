@@ -20,8 +20,11 @@
 
 $('#datetimepicker').data("DateTimePicker").FUNCTION()
 $(function(){
-$.ajax({
-      url: "/form_submit",
-      dataType: "html"
+  $.ajax({
+    url: "/form_submit",
+    dataType: "html"
   });
+
+  $(".end-location").change();
+
 })
