@@ -53,9 +53,9 @@
         <a class="navbar-brand" href="<%= root_path %>">FtL Paddling</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Landmarks", "/path1"  %></li>
-            <li><%= link_to "Food", "/path2"  %></li>
-            <li><%= link_to "Pokestops", "/path3"  %></li>
+            <li><%= link_to "Landmarks", "https://www.fortlauderdalehistoricalsociety.org/", target:"blank"  %></li>
+            <li><%= link_to "Food", "http://www.yelp.com/search?find_desc=food&find_loc=Fort+Lauderdale%2C+FL&ns=1", target:"_blank"  %></li>
+            <li><%= link_to "Pokestops", "https://www.google.com/maps/d/viewer?mid=1xlICRfFVjA0149VdcP-881LPHZ0&hl=en_US", target:"blank"  %></li>
           </ul>
         </div>
       </div>
@@ -75,9 +75,9 @@
             <ul class="nav nav-list">
               <li class="nav-header"></li>
               <li><%= link_to "Paddle Rentals", "https://www.google.com/search?q=paddle+board+rentals+ft+lauderdale&oq=paddle+rentals+ft+la&aqs=chrome.1.69i57j0l5.7542j0j1&sourceid=chrome&ie=UTF-8", target:"blank" %></li>
-              <li><%= link_to "Historical Landmarks", "/path2"  %></li>
-              <li><%= link_to "Food", "https://www.google.com/search?q=paddle+board+rentals+ft+lauderdale&oq=paddle+rentals+ft+la&aqs=chrome.1.69i57j0l5.7542j0j1&sourceid=chrome&ie=UTF-8#q=food+near+new+river+fort+lauderdale&rflfq=1&rlha=0&rllag=26115549,-80141741,524&tbm=lcl&tbs=lf_msr:-1,lf_tr:-1,lf_pl:0,lf_od:-1,lf_oh:-1,lf_zg:-1,lf:1,lf_ui:9", target:"blank"  %></li>
-              <li><%= link_to "Pokestops", "/path3"  %></li>
+              <li><%= link_to "Historical Landmarks", "https://www.fortlauderdalehistoricalsociety.org/", target:"blank"  %></li>
+              <li><%= link_to "Food", "http://www.yelp.com/search?find_desc=food&find_loc=Fort+Lauderdale%2C+FL&ns=1", target:"blank"  %></li>
+              <li><%= link_to "Pokestops", "https://www.google.com/maps/d/viewer?mid=1xlICRfFVjA0149VdcP-881LPHZ0&hl=en_US", target:"blank"  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
@@ -102,18 +102,25 @@
     <footer>
       <div class="container">
         <div class="row">
-          <p class="col-lg-2 col-lg-offset-1">&copy; CodeForFtL 2016</p>
-          <ul class="col-lg-3 col-lg-offset-2">
-            <li><a href="http://www.fortlauderdale.gov/">City of Fort Lauderdale</a></li>
-            <li><a href="https://www.fortlauderdalehistoricalsociety.org/">Fort Lauderdale Historical Society</a></li>
-            <li><a href="http://tides.mobilegeographics.com/index.html">Tides</a></li>
-            <li><a href="http://journals.fcla.edu/browardlegacy">Broward Legacy</a></li>
+          <div class="col-lg-3 col-lg-offset-1">
+            <ul id="creators">Brought to you by:
+              <li><a href="https://github.com/pixiitech", target="_blank">Gregory Hedrick</a></li>
+              <li><a href="https://github.com/izzycode", target="_blank">Israel Martinez</a></li>
+              <li><a href="https://github.com/melonious", target="_blank">Deanna Melin</a></li>
+            </ul>
+            <p>&copy; CodeForFtL 2016</p>
+          </div>
+          <ul class="col-lg-3 col-lg-offset-1">
+            <li><a href="http://www.fortlauderdale.gov/" target="_blank">City of Fort Lauderdale</a></li>
+            <li><a href="https://www.fortlauderdalehistoricalsociety.org/" target="_blank">Fort Lauderdale Historical Society</a></li>
+            <li><a href="http://tides.mobilegeographics.com/index.html" target="_blank">Tides</a></li>
+            <li><a href="http://journals.fcla.edu/browardlegacy" target="_blank">Broward Legacy</a></li>
           </ul>
           <ul class="col-lg-3 col-lg-offset-1">
-            <li><a href="https://weather.com/weather/tenday/l/USFL0149:1:US">Weather</a></li>
-            <li><a href="https://www.tripadvisor.com/Search?q=paddle+boarding&geo=34227">SUP Rentals</a></li>
-            <li><a href="https://www.tripadvisor.com/Search?geo=34227&pid=3826&typeaheadRedirect=true&redirect=&startTime=1469319010774&uiOrigin=MASTHEAD&q=kayak&returnTo=__2F__Tourism__2D__g34227__2D__Fort__5F__Lauderdale__5F__Broward__5F__County__5F__Florida__2D__Vacations__2E__html__2F__&searchSessionId=A6B512C878153FDE15A7ED2731C0505D1469304574847ssid">Kayak Rentals</a></li>
-            <li><a href="http://codeforftl.org/">Code for Fort Lauderdale</a></li>
+            <li><a href="https://weather.com/weather/tenday/l/USFL0149:1:US" target="_blank">Weather</a></li>
+            <li><a href="https://www.tripadvisor.com/Search?q=paddle+boarding&geo=34227" target="_blank">SUP Rentals</a></li>
+            <li><a href="https://www.tripadvisor.com/Search?geo=34227&pid=3826&typeaheadRedirect=true&redirect=&startTime=1469319010774&uiOrigin=MASTHEAD&q=kayak&returnTo=__2F__Tourism__2D__g34227__2D__Fort__5F__Lauderdale__5F__Broward__5F__County__5F__Florida__2D__Vacations__2E__html__2F__&searchSessionId=A6B512C878153FDE15A7ED2731C0505D1469304574847ssid" target="_blank">Kayak Rentals</a></li>
+            <li><a href="http://codeforftl.org/" target="_blank">Code for Fort Lauderdale</a></li>
           </ul>
         </div>
       </div>
