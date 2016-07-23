@@ -17,9 +17,12 @@
 
  */
 
-/*rgb(0,81,124) dark blue
+/*
+rgb(0,81,124) dark blue
 rgb(139,195,74) light green
-rgb(245,245,245) white smoke*/
+rgb(245,245,245) white smoke
+rgb(85,139,47) dark green
+*/
 
 /*Navbar Styling*/
 
@@ -49,7 +52,21 @@ rgb(245,245,245) white smoke*/
 
 /*Body Styling*/
 
-body h2 {
+body {
   font-family: 'Roboto Slab', serif;
   color: rgb(0,81,124);
 }
+
+/*End Body Styling*/
+
+/*Sidebar Styling*/
+
+a {
+  color: rgb(85,139,47);
+}
+
+a:hover {
+  color: rgb(0,81,124);
+}
+
+/*End Sidebar Styling*/
