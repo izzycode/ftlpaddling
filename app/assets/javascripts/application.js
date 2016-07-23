@@ -18,7 +18,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){
+$(document).on('ready turbolinks:load',function(){
   $.ajax({
     url: "/form_submit",
     dataType: "html"
