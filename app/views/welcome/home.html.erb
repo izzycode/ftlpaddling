@@ -18,9 +18,7 @@
 
 
     <label>End Location</label>
-    <%= select_tag "end_location", options_for_select(@locations ), class:"form-control end-location"%><br />
-
-    <!-- <input name="end_location" type="text" class="form-control"  placeholder="Bermuda..."><br /> -->
+    <%= select_tag "end_location", options_for_select(@locations ), class:"form-control end-location", disabled: true%><br />
 
     <label>Paddler Strength</label><br />
     <%= select_tag "paddling_strength", options_for_select([ "Beginner", "Intermediate","Pro","Merman" ]), class:"form-control" %><br /><br />
